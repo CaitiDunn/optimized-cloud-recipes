@@ -1,9 +1,9 @@
 ##########################################################
 # Host configuration                                     #
-# Generic                                                #
+# Generic    written by: Caiti Dunn caiti.dunn@intel.com #
 # Installs version:  1.20.0                              #
-# Installs Gaudi3 SPI FW: 1.20.0-fw-58.1.1-sec-2        #
-# Installs Gaudi2 SPI FW: 1.20.0-fw-58.1.1-sec-2       #
+# Installs Gaudi3 SPI FW: 1.20.0-fw-58.1.1-sec-2         #
+# Installs Gaudi2 SPI FW: 1.20.0-fw-58.1.1-sec-2         #
 ##########################################################
 ---
 - name: baremetal-recipe-1.20.0 via apt
@@ -80,6 +80,17 @@
           - liblcms2-dev
           - libopenjp2-7-dev
           - libtiff5-dev
+          - jq
+          - unzip
+          - moreutils
+          - libcairo2-dev
+          - libglib2.0-dev 
+          - libselinux1-dev 
+          - libpcre2-dev 
+          - libatlas-base-dev 
+          - google-perftools
+          - numactl
+          - libopenblas-dev
           - libwebp-dev
           - tcl8.6-dev
           - tk8.6-dev
